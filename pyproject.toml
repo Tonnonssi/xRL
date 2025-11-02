@@ -1,0 +1,25 @@
+[project]
+name = "xRL"
+version = "0.1.0"
+description = "xRL labs"
+authors = [{ name = "Jimin Lee" }]
+readme = "readme.md"
+requires-python = "==3.10"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "seaborn>=0.13",
+    "torch==2.1.2",
+    "captum==0.8.0",
+    "pytest>=8.4.2",
+    "plotly==6.3.1",
+    "gymnasium==1.2.1",
+    "lime==0.2.0.1"
+]
+
+[dependency-groups]
+dev = ["ipykernel", "jupyter", "pytest", "ruff"]
+
+[tool.setuptools.packages.find]
+exclude = ["src"]
